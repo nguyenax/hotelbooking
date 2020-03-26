@@ -4,8 +4,8 @@ const Order = require('../models/order');
 const Passport = require('passport');
 
 //Express validator
-const { check, validationResult } = require('express-validator');
-const { sanitize } = require('express-validator');
+const { check, validationResult } = require('express-validator/check');
+const { sanitize } = require('express-validator/filter');
 
 const querystring = require('querystring');
 exports.signUpGet = (req,res) => {

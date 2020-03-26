@@ -26,7 +26,7 @@ exports.pushToCloudinary = (req,res,next) => {
         })
         .catch(() => {
             req.flash('error', 'Sorry there was a problem uploading your image, please try again.')
-            res.redirect('admin/add');
+            res.redirect('/admin/add');
         });
     } else {
         next();
